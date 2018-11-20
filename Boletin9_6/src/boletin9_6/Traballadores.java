@@ -30,8 +30,8 @@ public class Traballadores {
             }
             numTotalTraballadores = numTotalTraballadores + 1;
         } while (soldo != 0);
-        JOptionPane.showMessageDialog(null, "Número Total traballadores: " + numTotalTraballadores
+        JOptionPane.showMessageDialog(null, "Número Total traballadores: " + (numTotalTraballadores-1)
                 + "\nNúmero de traballadoresque ganan entre 1000 e 1750 €: " + contador1
-                + "\nPorcentaje de traballadores que ganan menos de 1000 €: " + ((contador2 * 100) / numTotalTraballadores) + "%");
+                + "\nPorcentaje de traballadores que ganan menos de 1000 €: " + ((contador2 * 100) / (numTotalTraballadores-1)) + "%");
     }
 }
